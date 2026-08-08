@@ -1,7 +1,7 @@
 package DepartamentoRH.entities;
 public class funcionario {
-    public String name;
-    public int reg = 0;
+    public String name = "andre";
+    public int reg = 98469;
     public double Salbruto = 3200;
     public double Desconto = 800;
     public double salarioLIquido;
@@ -15,16 +15,18 @@ public class funcionario {
     this.salarioLIquido = salarioLiquido;
     }
     public double CalcSalario(){
-       return salarioLIquido = (Desconto - Salbruto);
+       return salarioLIquido = ( Salbruto - Desconto);
     }
    public String toString(){
         return
-                "funcionario: "+
-                name +" , "
-                +"Salario Bruto: "
-                +Salbruto
-                +", Salario Liquido"
-                +String.format("%.2f",salarioLIquido);
-         
+                "funcionario: \n"+
+                name +"\n"
+                +"Salario Bruto: \n"
+                +Salbruto+"\n"
+                +"Salario Liquido: \n"
+                +String.format("%.2f",CalcSalario())+"\n"
+                + "Desconto: "
+                +Desconto;
+
     }
 }
