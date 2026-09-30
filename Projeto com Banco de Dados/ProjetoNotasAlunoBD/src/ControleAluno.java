@@ -13,7 +13,7 @@ public class ControleAluno {
     PreparedStatement instrucaosql;
     Statement comando;
     ResultSet lista;
-    FormAluno Faluno = new FormAluno();
+ 
     
     public void Conectar(){
         try{
@@ -37,7 +37,5 @@ public class ControleAluno {
             JOptionPane.showMessageDialog(null,"Problemas no acesso ao BD");
         }
     }
-    public void cadastrar(String nome, double nota1, double nota2, double nota3){
-        Faluno.get
-    };
+    
 }

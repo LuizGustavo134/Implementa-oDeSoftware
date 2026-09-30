@@ -24,6 +24,12 @@ public class FormLogin extends javax.swing.JFrame {
 
         jLabel2.setText("Login");
 
+        textlogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textloginActionPerformed(evt);
+            }
+        });
+
         jLabel3.setText("Senha");
 
         BotaoLogar.setText("LOGAR");
@@ -82,6 +88,10 @@ public class FormLogin extends javax.swing.JFrame {
         controle.Logar(this.textlogin.getText(),Integer.parseInt(this.textsenha.getText()));
       
     }//GEN-LAST:event_BotaoLogarActionPerformed
+
+    private void textloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textloginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textloginActionPerformed
 
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
