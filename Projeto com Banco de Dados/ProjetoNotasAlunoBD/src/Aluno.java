@@ -7,20 +7,20 @@ public class Aluno {
     private String nome;
     private double nota1;
     private double nota2;
+    private double nota3;
 
     // Construtor vazio
     public Aluno() {
     }
 
-    // Construtor com todos os atributos
-    public Aluno(int rgm, String nome, double nota1, double nota2) {
+    public Aluno(int rgm, String nome, double nota1, double nota2, double nota3) {
         this.rgm = rgm;
         this.nome = nome;
         this.nota1 = nota1;
         this.nota2 = nota2;
+        this.nota3 = nota3;
     }
 
-    // Getter e Setter do RGM
     public int getRgm() {
         return rgm;
     }
@@ -29,7 +29,6 @@ public class Aluno {
         this.rgm = rgm;
     }
 
-    // Getter e Setter do Nome
     public String getNome() {
         return nome;
     }
@@ -38,7 +37,6 @@ public class Aluno {
         this.nome = nome;
     }
 
-    // Getter e Setter da Nota 1
     public double getNota1() {
         return nota1;
     }
@@ -47,7 +45,6 @@ public class Aluno {
         this.nota1 = nota1;
     }
 
-    // Getter e Setter da Nota 2
     public double getNota2() {
         return nota2;
     }
@@ -56,6 +53,15 @@ public class Aluno {
         this.nota2 = nota2;
     }
 
+    public double getNota3() {
+        return nota3;
+    }
+
+    public void setNota3(double nota3) {
+        this.nota3 = nota3;
+    }
+
+  
     // Cálculo da média
     public double calcularMedia() {
         return (nota1 + nota2) / 2;
